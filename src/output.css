@@ -554,6 +554,26 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-56 {
+  top: 14rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -576,14 +596,6 @@ video {
   aspect-ratio: 1 / 1;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -604,24 +616,6 @@ video {
   gap: 0.25rem;
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-20 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(5rem * var(--tw-space-y-reverse));
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -634,19 +628,14 @@ video {
   border-width: 2px;
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-mainDark {
   --tw-border-opacity: 1;
   border-color: rgb(19 24 66 / var(--tw-border-opacity));
-}
-
-.bg-mainBeige {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 246 226 / var(--tw-bg-opacity));
-}
-
-.bg-customOrange {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 127 62 / var(--tw-bg-opacity));
 }
 
 .bg-customBlueish {
@@ -654,14 +643,9 @@ video {
   background-color: rgb(128 196 233 / var(--tw-bg-opacity));
 }
 
-.bg-customPurple {
+.bg-customDarkBlue {
   --tw-bg-opacity: 1;
-  background-color: rgb(96 76 195 / var(--tw-bg-opacity));
-}
-
-.bg-customYellowish {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 222 149 / var(--tw-bg-opacity));
+  background-color: rgb(19 24 66 / var(--tw-bg-opacity));
 }
 
 .bg-customGreen {
@@ -669,9 +653,14 @@ video {
   background-color: rgb(173 216 153 / var(--tw-bg-opacity));
 }
 
-.bg-customRed {
+.bg-customLightYellow {
   --tw-bg-opacity: 1;
-  background-color: rgb(188 90 148 / var(--tw-bg-opacity));
+  background-color: rgb(249 226 175 / var(--tw-bg-opacity));
+}
+
+.bg-customOrange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 127 62 / var(--tw-bg-opacity));
 }
 
 .bg-customPink {
@@ -679,18 +668,24 @@ video {
   background-color: rgb(240 117 170 / var(--tw-bg-opacity));
 }
 
-.bg-customLightYellow {
+.bg-customPurple {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 226 175 / var(--tw-bg-opacity));
+  background-color: rgb(96 76 195 / var(--tw-bg-opacity));
 }
 
-.bg-customDarkBlue {
+.bg-customRed {
   --tw-bg-opacity: 1;
-  background-color: rgb(19 24 66 / var(--tw-bg-opacity));
+  background-color: rgb(188 90 148 / var(--tw-bg-opacity));
 }
 
-.p-10 {
-  padding: 2.5rem;
+.bg-customYellowish {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 222 149 / var(--tw-bg-opacity));
+}
+
+.bg-mainBeige {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 246 226 / var(--tw-bg-opacity));
 }
 
 .px-10 {
@@ -698,19 +693,14 @@ video {
   padding-right: 2.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-mainDark {
@@ -720,14 +710,6 @@ video {
 
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
