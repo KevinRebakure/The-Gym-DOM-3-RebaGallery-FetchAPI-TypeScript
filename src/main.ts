@@ -43,7 +43,7 @@ if (Object.keys(prefix).includes(date)) {
 }
 
 let page = 1;
-async function generateGallery(){
+async function generateGallery() {
   // Request
   const response = await fetch(
     `https://picsum.photos/v2/list?page=${page}&limit=100`,
@@ -51,13 +51,13 @@ async function generateGallery(){
   const data = await response.json();
   const randomOrder = data.sort(() => 0.5 - Math.random());
   page++;
-  console.log(page);
+  // console.log(page);
 
   // Populate the UI
-  const images = randomOrder.map((image: any): string => {
+  const images = randomOrder.map((image: any) => {
     const img = document.createElement("img");
     img.src = image.download_url;
-    img.className = "w-full aspect-square";
+    img.className = "w-full aspect-square object-cover";
     img.alt = "Couldn't display😭";
     return img.outerHTML;
   });

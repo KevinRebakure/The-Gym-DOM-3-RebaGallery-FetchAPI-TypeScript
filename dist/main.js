@@ -45,11 +45,10 @@ async function generateGallery() {
     const data = await response.json();
     const randomOrder = data.sort(() => 0.5 - Math.random());
     page++;
-    console.log(page);
     const images = randomOrder.map((image) => {
         const img = document.createElement("img");
         img.src = image.download_url;
-        img.className = "w-full aspect-square";
+        img.className = "w-full aspect-square object-cover";
         img.alt = "Couldn't display😭";
         return img.outerHTML;
     });

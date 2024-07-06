@@ -554,26 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.sticky {
-  position: sticky;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-56 {
-  top: 14rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -620,17 +600,8 @@ video {
   border-radius: 1.5rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-2 {
   border-width: 2px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-mainDark {
