@@ -58,7 +58,8 @@ async function generateGallery() {
     const img = document.createElement("img");
     img.src = image.download_url;
     // img.className = "w-full aspect-square object-cover rounded-full";
-    img.className = "w-full aspect-square object-cover rounded-2xl";
+    // img.className = "w-full aspect-square object-cover rounded-2xl";
+    img.className = "w-full aspect-square object-cover rounded-lg";
     // img.className = "w-full aspect-square object-cover";
     img.alt = "Couldn't display😭";
     return img.outerHTML;
